@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>AXIOS BEER API</title>
+</head>
+<body>
+    <div class="main-title">
+      <h1>BEER API WITH AXIOS</h1>
+    </div>
+    <div class="main-buttons">
+      <button id="show-beer">SHOW BEER!!!!</button>
+      <button id="hide-beer">HIDE BEER!!!!</button><br><br>
+      <button id="show-25-beers">SHOW 25 DEFAULT BEERS!!!!</button>
+      <button id="hide-25-beers">HIDE 25 DEFAULT BEERS!!!!</button><br><br>
+      <button id="show-50-beers">SHOW 50 BEERS!!!!</button>
+      <button id="hide-50-beers">HIDE 50 BEERS!!!!</button><br><br>
+  </div>
+
+    <!--DIVS TO SHOW THE NUM OF BEERS SELECTED-->
+    <div>
+    SELECT NUM OF BEERS: 
+    <select id="beers-to-show">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+      </select>
+      <button id="go-to-show-beers">SHOW NUM SELECTED BEERS</button>
+      <button id="go-to-hide-beers">HIDE NUM SELECTED BEERS</button>
+      <div id="beers-to-be-showed" class="beers-to-be-showed"></div>
+    </div>
+
+    <!--DIVS TO SEARCH BEER BY NAME -->
+    <div class="main-by-name">
+      BEER NAME: <input id="name-beer-form" type="text" name="fname" value="">
+      <button id="capture-beer-name">SEARCH BEER BY NAME</button>
+      <button id="hide-capture-beer-name">HIDE BEER BY NAME</button>
+      <div id="beer-to-search-by-name" class="beer-to-search-by-name"></div>
+    </div>
+
+     <!--DIVS TO SEARCH BEER BY BREWED_BEFORE-->
+     
+    <div class="main-by-date">
+      DATE (Month-Year): 
+        <select id="month-form">
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select id="year-form">
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+        </select>
+        <button id="capture-date-beer">SEARCH BEER BY DATE BREWED</button>
+        <button id="hide-capture-date-beer">HIDE SEARCH BEER BY DATE BREWED</button>
+     
+    </div>
+
+     <!--DIVS TO SEARCH BEER WITH ID-->
+     <div class="main-by-id">
+        BEER ID: <input id="id-beer-form" type="text" name="fname" value="">
+        <button id="capture-beer-id">SEARCH BEER BY ID</button>
+        <button id="hide-capture-beer-id">HIDE BEER BY ID</button>
+        <div id="beer-to-search-by-id" class="beer-to-search-by-id"></div>
+      </div>
+
+
+    <!--DIVS TO SHOW ONE BEER-->
+    <div class="show-one-beer">
+      <div id="beer-name-async"></div>
+      <div id="first-brewed-async"></div>
+      <div id="description-async"></div>
+      <div id="div-image-async"><img id="image-async"></img></div>
+    </div>
+    
+    <!--DIV TO SHOW 25 DEFAULT BEERS-->
+    <div id="array-of-beers" class="array-of-beers"></div>
+
+    <!--DIV TO SHOW 50 BEERS PER PAGE-->
+    <div id="array-of-50-beers" class="array-of-50-beers"></div>
+
+    <!--DIV TO SHOW NUM SELECTED BEERS PER PAGE-->
+    <div id="array-of-selected-beers" class="array-of-selected-beers"></div>
+    
+    <!--DIV TO SHOW BEER SEARCH BY NAME-->
+    <div class="show-one-beer">
+      <div id="show-beer-by-name"></div>
+      <div id="show-beer-first-brewed-by-name"></div>
+      <div id="show-description-by-name"></div>
+      <div id="div-image-async"><img id="image-by-name"></img></div>
+    </div>
+
+    <!--DIV TO SHOW BEER SEARCH BY DATE-->
+    <div id="main-array-of-beers-by-date"> 
+      <div id="array-of-beers-by-date" class="array-of-beers"></div>
+    </div>
+
+    <!--DIV TO SHOW BEER SEARCH BY ID-->
+    <div class="show-one-beer">
+        <div id="show-beer-by-id"></div>
+        <div id="show-beer-first-brewed-by-id"></div>
+        <div id="show-description-by-id"></div>
+        <div id="div-image-async"><img id="image-by-id"></img></div>
+      </div>
+    
+    <!--IMPORTAMOS EL JS CON EL UI-->
+    <script src="js/apibeeraxiosUI.js"></script>
+</body>
+</html>
