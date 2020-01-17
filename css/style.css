@@ -99,7 +99,7 @@ h1 {
 	margin-bottom: 30px;
 }
 
-h3, p {
+h3 {
 	margin-bottom: 30px;
 }
 
@@ -380,7 +380,7 @@ div.cambiar {
 
 .producto p {
   font-family: 'Dosis', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   color: #fff;
   padding: 30px 30px 30px;
