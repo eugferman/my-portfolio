@@ -7,7 +7,6 @@ p{
   font-size: 18px;
 }
 
-
 header {
 	text-align: center;
 	width: 100%;
@@ -91,7 +90,7 @@ a:active {
 	padding: 50px;
 	color: #FFF;
 	text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient( 135deg, #0f73d1 25%, #80baf0 100%);
+  background-image: linear-gradient( 135deg, #06beb6 25%, #48b1bf 100%);
 }
 
 h1 {
@@ -130,7 +129,7 @@ button:hover{
 }
 
 .main-contact{
-	background-color: #80baf0;
+	background-color: #06beb6;
 }
 
 .content-projects{
@@ -145,6 +144,7 @@ button:hover{
 }
 
 .project-list{
+  width: 1024px;
   margin-top: 30px;
   display:flex;
   flex-direction: row;
@@ -213,7 +213,7 @@ button:hover{
 }
 
 .content-academy{
-	height: 1250px;
+	height: 1350px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -281,8 +281,6 @@ button:hover{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-
-
 .content-contact{
 	height: 600px;
 	display: flex;
@@ -341,8 +339,8 @@ div.cambiar {
 }
 
 .producto {
-  width: 400px;
-  height: 370px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -353,8 +351,8 @@ div.cambiar {
 }
 
 .producto .mask, .producto .content {
-  width: 400px;
-  height: 370px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -362,6 +360,8 @@ div.cambiar {
 }
 
 .producto img {
+  width:300px;
+  height: 300px;
   display: block;
   position: relative;
 }
@@ -512,3 +512,216 @@ div.cambiar {
   -ms-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
+
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav ul li{
+    padding: 2px;
+  }
+	h1 {
+    font-size: 35px;
+  }
+  .project-list{
+    flex-direction: column;
+    width: 300px;
+  }
+  .producto .mask, .producto .content {
+    width: 280px;
+    height: 280px;
+  }
+  .producto p {
+    font-size: 15px;
+    padding: 15px 10px 10px 10px;
+  }
+
+  .content-projects {
+    height: 2700px;
+  }
+
+  .producto {
+    width: 280px;
+    height: 280px;
+} 
+  .producto img{
+    width: 280px;
+    height: 280px;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile-photo p {
+    width: 300px;
+  }
+  .profile-skills {
+    width: 290px;
+    margin-left: 110px;
+  }
+  .content-about {
+    height: 1160px;
+  }
+  .content-academy {
+    height: 1800px;
+  }
+  .info-academy {
+    width: 300px;
+  }
+  .info-experience {
+    width: 300px;
+  }
+  .content-experience {
+    height: 1800px;
+  }
+  .contact {
+    width: 300px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px){
+	h1 {
+    font-size: 45px;
+  }
+	.content-projects {
+    height: 1500px;
+  }
+  .project-list{
+    width: 601px;
+  }
+  .producto .mask, .producto .content {
+    width: 280px;
+    height: 280px;
+  }
+  .producto p {
+    font-size: 15px;
+    padding: 15px 10px 10px 10px;
+  }
+
+  .producto {
+    width: 280px;
+    height: 280px;
+} 
+  .producto img{
+    width: 280px;
+    height: 280px;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile-photo p {
+    width: 500px;
+  }
+  .profile-skills {
+    width: 600px;
+  }
+  .content-about {
+    height: 1160px;
+  }
+  .content-academy {
+    height: 1500px;
+  }
+  .info-academy {
+    width: 600px;
+  }
+  .info-experience {
+    width: 600px;
+  }
+  .content-experience {
+    height: 1500px;
+  }
+  .contact {
+    width: 500px;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .content-projects {
+    height: 1200px;
+  }
+  .producto .mask, .producto .content {
+    width: 280px;
+    height: 280px;
+  }
+  .producto p {
+    font-size: 15px;
+    padding: 15px 10px 10px 10px;
+  }
+  .producto {
+    width: 280px;
+    height: 280px;
+  } 
+  .producto img{
+    width: 280px;
+    height: 280px;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile-photo p {
+    width: 500px;
+  }
+  .profile-skills {
+    width: 600px;
+  }
+  .content-about {
+    height: 1160px;
+  }
+  .content-academy {
+    height: 1500px;
+  }
+  .info-academy {
+    width: 600px;
+  }
+  .info-experience {
+    width: 600px;
+  }
+  .content-experience {
+    height: 1500px;
+  }
+  .contact {
+    width: 500px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 993px and up) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+	.content-projects {
+    height: 1300px;
+  }
+  .producto {
+    width: 300px;
+    height: 300px;
+  }
+
+  .producto .mask, .producto .content {
+    width: 300px;
+    height: 300px;
+  }
+
+  .producto img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile {
+    flex-direction: row;
+  }
+  
+}
+
+/* Extra large devices (large laptops and desktops, 993px and up) */
+@media only screen and (min-width: 1201px){
+
+	.content-projects {
+    height: 1290px;
+  }
+  
+}
+
+
+
