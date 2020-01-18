@@ -110,8 +110,8 @@ button {
 	outline: none;
 	padding: 20px 40px;
 	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
+  background: #fff;
+  margin-top: 20px;
 	box-shadow: 0 3px 20px 0 #0000003b;
 }
 button:hover{
@@ -209,7 +209,8 @@ button:hover{
 
 .profile-social img{
   width: 50px;
-  margin-right: 10px;
+  margin: 15px 10px 0px 0px;
+  
 }
 
 .content-academy{
@@ -374,7 +375,7 @@ div.cambiar {
   position: relative;
   font-size: 18px;
   padding: 10px;
-  background:#0f73d1;
+  background:#06beb6;
   margin: 20px 0 0 0;
 }
 
@@ -392,7 +393,7 @@ div.cambiar {
   display: inline-block;
   text-decoration: none;
   padding: 14px 70px;
-  background: #0f73d1;
+  background: #06beb6;
   color: #fff;
   text-transform: uppercase;
   box-shadow: 0 0 1px #000;
