@@ -133,7 +133,6 @@ button:hover{
 }
 
 .content-projects{
-	height: 1100px;
 	display: flex;
 	flex-direction: column;
   align-items: center;
@@ -159,7 +158,6 @@ button:hover{
 
 
 .content-about{
-	height: 750px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -214,7 +212,6 @@ button:hover{
 }
 
 .content-academy{
-	height: 1350px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -249,7 +246,6 @@ button:hover{
 }
 
 .content-experience{
-	height: 1300px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -283,14 +279,13 @@ button:hover{
 }
 
 .content-contact{
-	height: 600px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .content-contact h2{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .contact{
@@ -300,7 +295,7 @@ button:hover{
 }
 
 .info-contact{
-	margin: 25px 0px 0px 0px;
+	margin: 25px 0px 50px 0px;
 	width: 350px;
 	background-color: rgb(235, 233, 233);
 	padding: 25px;
@@ -537,9 +532,6 @@ div.cambiar {
     padding: 15px 10px 10px 10px;
   }
 
-  .content-projects {
-    height: 2700px;
-  }
 
   .producto {
     width: 280px;
@@ -559,20 +551,11 @@ div.cambiar {
     width: 290px;
     margin-left: 110px;
   }
-  .content-about {
-    height: 1160px;
-  }
-  .content-academy {
-    height: 1800px;
-  }
   .info-academy {
     width: 300px;
   }
   .info-experience {
     width: 300px;
-  }
-  .content-experience {
-    height: 1800px;
   }
   .contact {
     width: 300px;
@@ -583,9 +566,6 @@ div.cambiar {
 @media only screen and (min-width: 601px) and (max-width: 768px){
 	h1 {
     font-size: 45px;
-  }
-	.content-projects {
-    height: 1500px;
   }
   .project-list{
     width: 601px;
@@ -616,20 +596,11 @@ div.cambiar {
   .profile-skills {
     width: 600px;
   }
-  .content-about {
-    height: 1160px;
-  }
-  .content-academy {
-    height: 1500px;
-  }
   .info-academy {
     width: 600px;
   }
   .info-experience {
     width: 600px;
-  }
-  .content-experience {
-    height: 1500px;
   }
   .contact {
     width: 500px;
@@ -640,9 +611,6 @@ div.cambiar {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-  .content-projects {
-    height: 1200px;
-  }
   .producto .mask, .producto .content {
     width: 280px;
     height: 280px;
@@ -668,20 +636,11 @@ div.cambiar {
   .profile-skills {
     width: 600px;
   }
-  .content-about {
-    height: 1160px;
-  }
-  .content-academy {
-    height: 1500px;
-  }
   .info-academy {
     width: 600px;
   }
   .info-experience {
     width: 600px;
-  }
-  .content-experience {
-    height: 1500px;
   }
   .contact {
     width: 500px;
@@ -691,9 +650,7 @@ div.cambiar {
 /* Extra large devices (large laptops and desktops, 993px and up) */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
 
-	.content-projects {
-    height: 1300px;
-  }
+	
   .producto {
     width: 300px;
     height: 300px;
@@ -718,9 +675,6 @@ div.cambiar {
 /* Extra large devices (large laptops and desktops, 993px and up) */
 @media only screen and (min-width: 1201px){
 
-	.content-projects {
-    height: 1290px;
-  }
   
 }
 
