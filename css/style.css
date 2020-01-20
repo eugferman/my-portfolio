@@ -103,7 +103,6 @@ h3 {
 	margin-bottom: 30px;
 }
 
-
 button {
   font-size: 18px;
 	border: none;
@@ -144,23 +143,22 @@ button:hover{
 
 .project-list{
   width: 1024px;
-  margin-top: 30px;
+  margin: 30px 0px 30px 0px;
   display:flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-
 .project-list h4{
   text-align: center;
 }
 
-
 .content-about{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+  align-items: center;
+  margin: 0px 0px 30px 0px;
 }
 
 .content-about h2{
@@ -215,7 +213,6 @@ button:hover{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
 }
 
 .content-academy h2{
@@ -300,6 +297,11 @@ button:hover{
 	background-color: rgb(235, 233, 233);
 	padding: 25px;
 	border-radius: 5px;
+}
+
+.w3-blue, .w3-hover-blue:hover {
+  color: #fff!important;
+  background-color: #06beb6!important;
 }
 
 /* TARGET CSS */
@@ -672,11 +674,6 @@ div.cambiar {
   
 }
 
-/* Extra large devices (large laptops and desktops, 993px and up) */
-@media only screen and (min-width: 1201px){
-
-  
-}
 
 
 
